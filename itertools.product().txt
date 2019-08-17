@@ -1,0 +1,11 @@
+from itertools import product
+
+a= list(map(int,input().split()))
+b= list(map(int,input().split()))
+
+x = list(product(a,b))
+
+res = " ".join(str(i) for i in x)
+
+print(res)
+

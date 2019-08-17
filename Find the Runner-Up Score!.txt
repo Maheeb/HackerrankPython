@@ -1,0 +1,16 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+
+test = []
+y = []
+myList = []
+
+for test in arr:
+    y.append(test)
+    y.sort(reverse=True)
+
+myList = list(dict.fromkeys(y))
+
+print(myList[1])
+

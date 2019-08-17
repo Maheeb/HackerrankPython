@@ -1,0 +1,9 @@
+from itertools import permutations
+
+a= list(input().split())
+n = int(a[1])
+str = str(a[0])
+
+res = list(permutations(sorted(str),n))
+for x in res:
+    print("".join(x))

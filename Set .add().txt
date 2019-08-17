@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+
+n = int(input())
+list= []
+
+for i in range(n):
+    list.append(input())
+
+set = set(list)
+
+print(len(set))

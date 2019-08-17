@@ -1,0 +1,25 @@
+import re
+def swap_case(s):
+    test=[]
+    titled=[]
+    lowers=[]
+    str =''
+    pattern ='[\W+\d+]'
+    for a in s:
+        if (a.isupper()) == True:
+            str += (a.lower())
+        elif (a.islower()== True):
+            str += (a.upper())
+        elif (a.isspace()==True):
+            str += a
+        elif (re.findall(pattern,a)):
+            str += a
+
+
+    return str
+
+
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)

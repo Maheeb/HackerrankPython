@@ -1,0 +1,21 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+from collections import deque
+d= deque()
+n = int(input())
+cmd=[]
+for i in range(n):
+    cmd = (input().split())
+    if(cmd[0]=="append"):
+        d.append(cmd[1])
+    elif (cmd[0] == "appendleft"):
+        d.appendleft(cmd[1])
+    elif (cmd[0] == "pop"):
+        # d.pop(int(cmd[1]))
+        d.pop()
+    elif (cmd[0] == "popleft"):
+        # d.pop(int(cmd[1]))
+        d.popleft()
+
+
+print(" ".join(i for i in d))

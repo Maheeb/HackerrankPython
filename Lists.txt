@@ -1,0 +1,39 @@
+if __name__ == '__main__':
+    N = int(input())
+
+    list = []
+    list_1 = []
+    list_2 = []
+    temp = []
+
+    for i in range(0,N):
+        ele =input()
+        temp.append(ele)
+
+
+list = [i.split() for i in temp]
+
+for x in list:
+    for i in range(len(list)):
+        for j in range(len(list[i])):
+            if(list[i][j]=="insert"):
+                list_1.insert(int(list[i][j+1]),int(list[i][j+2]))
+            if (list[i][j] == "print"):
+                print(list_1)
+            if (list[i][j] == "remove"):
+                list_1.remove(int(list[i][j+1]))
+            if (list[i][j] == "append"):
+                list_1.append(int(list[i][j+1]))
+            if (list[i][j] == "sort"):
+                list_1.sort()
+            if (list[i][j] == "pop"):
+                list_1.pop()
+            if (list[i][j] == "reverse"):
+                list_1.reverse()
+
+
+
+    break
+
+
+

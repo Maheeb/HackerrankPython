@@ -1,0 +1,15 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+
+n = int(input())
+list1= list(map(int,input().split()))[:n]
+
+m = int(input())
+list2= list(map(int,input().split()))[:n]
+
+res1 = set(list1)
+res2 = set(list2)
+
+z = res1.symmetric_difference(res2)
+
+print(len(z))

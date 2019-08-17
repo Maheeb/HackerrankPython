@@ -1,0 +1,15 @@
+m = int(input())
+list1= list(map(int,input().split()))[:m]
+n = int(input())
+list2= list(map(int,input().split()))[:n]
+
+set1 = set(list1).difference(set(list2))
+set2 = set(list2).difference(set(list1))
+
+z= set1.union(set2)
+
+res = list(z)
+res.sort()
+
+for i in res:
+    print(i)

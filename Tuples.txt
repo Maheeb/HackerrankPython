@@ -1,0 +1,15 @@
+if __name__ == '__main__':
+    n = int(input())
+    integer_list = map(int, input().split())
+
+array =[]
+
+for x in integer_list:
+    array.append(x)
+
+
+y = tuple(array)
+
+z=hash(y)
+
+print(z)

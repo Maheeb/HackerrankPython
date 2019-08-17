@@ -1,0 +1,12 @@
+if __name__ == '__main__':
+    n = int(input())
+
+    test = []
+for x in range(1,n+1):
+        test.append(x)
+
+y = ''.join(str(e) for e in test )
+
+
+
+print(y)
